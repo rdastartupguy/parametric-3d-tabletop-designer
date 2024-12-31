@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desk-Genie 3D</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <img  id="logo" class="logo" alt="craftpixels logo"/>
+        <div class="row">
+            <div class="col-md-7 p-relative" id="previewCanvas">
+                <canvas class="webgl"></canvas>
+            </div>
+            <div class="col-md-5 p-relative" id="rightsideLayout">
+                <div class="settings_popup">
+                    <p class="title-label">Create unique, custom desk design in seconds. Drag the sliders to get inspired by endless combinations. Built with ♥ at Craftpixels.</p>
+                    <div class="range-slider">
+                        <label for="randomslider" class="form-label"><img id="randomsliderImg" />Randomize</label>
+                        <input type="range" class="form-range slider"  value="8" min="2" max="9" step="1" id="randomslider">
+                    </div>
+                    <div class="range-slider">
+                        <label for="complexityslider" class="form-label"><img id="complexitysliderImg" />Complexity</label>
+                        <input type="range" class="form-range slider"  value="20" min="3" max="15" step="1" id="complexityslider">
+                    </div>
+                    <div class="w-full">
+                        <label for="designslider" class="form-label"><img id="designsliderImg" />Surface Finish</label>
+                        <ul class="modellist" id="texturelist">
+
+                        </ul>
+                    </div>
+                    
+                    <p>We’d love hearing from you! Drop us an email at madz@craftpixels.in</p>
+                    <div class="footertext">
+                        <span class="labelTxt">Plus, shout out to the awesome folks at</span>
+                        <img id="sketchLogo" class="logo_img" />
+                        <img id="threeLogo" class="logo_img" />
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

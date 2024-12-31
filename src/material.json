@@ -1,0 +1,27 @@
+{
+    "material":[
+        {
+            "id":"Wood_Herringbone_Tiles_003_SD",
+            "name":"Wood",
+            "colormap":"./materials/Wood_Herringbone_Tiles_003_SD/Wood_Herringbone_Tiles_003_basecolor.jpg",
+            "normalmap":"./materials/Wood_Herringbone_Tiles_003_SD/Wood_Herringbone_Tiles_003_normal.jpg",
+            "roughnessmap":"./materials/Wood_Herringbone_Tiles_003_SD/Wood_Herringbone_Tiles_003_roughness.jpg",
+            "ambientmap":"./materials/Wood_Herringbone_Tiles_003_SD/Wood_Herringbone_Tiles_003_ambientOcclusion.jpg",
+            "displacementmap":"./materials/Wood_Herringbone_Tiles_003_SD/Wood_Herringbone_Tiles_003_height.png",
+            "repeat":0.05
+        },
+            {
+                "id":"Marble_Carrara_003_SD",
+                "name":"Marble",
+                "colormap":"./materials/Marble_Carrara_003_SD/Marble_Carrara_003_COLOR.jpg",
+                "normalmap":"./materials/Marble_Carrara_003_SD/Marble_Carrara_003_NORM.jpg",
+                "roughnessmap":"./materials/Marble_Carrara_003_SD/Marble_Carrara_003_OCC.jpg",
+                "ambientmap":"./materials/Marble_Carrara_003_SD/Marble_Carrara_003_ROUGH.jpg",
+                "displacementmap":"./materials/Marble_Carrara_003_SD/Marble_Carrara_003_DISP.png",
+                "repeat":0.01
+            }
+            
+            
+        ]
+    
+}

@@ -1,0 +1,415 @@
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    height: 100vh;
+    font-family: 'Roboto';
+    color: #95afc0;
+    font-size: 14px;
+}
+
+.logo {
+	position: absolute;
+	left: 50px;
+	top: 20px;
+	z-index: 2;
+	width: 150px;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    width: 58.33333333%;
+    height:100vh;
+}
+
+.title-label{
+    font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #95afc0;
+  margin-bottom: 30px;
+  float: left;
+}
+
+#rightsideLayout {
+	height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.settings_popup{
+    width: 80%;
+    padding:10px 20px;
+}
+
+.modellist {
+	
+	width: 100%;
+	z-index: 1000;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.modellist li img {
+	width: 90px;
+	height: 90px;
+}
+
+.modellist li label{
+    margin-top: 10px;
+    text-align: right;
+    width: 100%;
+    position: relative;
+}
+
+.modellist li.active label::after{
+    position: absolute;
+    content: '';
+    margin-left:-75%;
+    top:7px;
+    width: 5px;
+    height: 5px;
+    background-color: #95afc0;
+    border-radius: 100%;
+}
+
+.modellist li {
+	width: 90px;
+	
+	list-style: none;
+	text-align: center;
+	padding: 5px;
+	
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+	cursor: pointer;
+    margin-right: 15px;
+}
+
+.modellist li:hover {
+	border-color: #f7c02a;
+}
+
+.modellist li.active {
+	border-color: #f7c02a;
+}
+
+.iconslist {
+	padding: 0;
+	margin-left: 20px;
+	padding-top: 100px;
+
+	width: 100px;
+	/* height: 100vh; */
+	/* border: 1px solid #ccc; */
+	display: flex;
+	align-items: center;
+	/* justify-content: space-evenly; */
+	flex-direction: column;
+
+}
+
+.iconslist li:hover {
+	border-color: #f7c02a;
+}
+
+.iconslist li.active {
+	border-color: #f7c02a;
+}
+
+.iconslist li {
+	width: 80px;
+	height: 80px;
+	list-style: none;
+	text-align: center;
+	padding: 5px;
+	border: 2px solid #ccc;
+	border-radius: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+	cursor: pointer;
+	/* box-shadow: 1px 1px 5px #ccc; */
+}
+
+.title1 {
+	padding-left: 15px;
+}
+
+.p-relative {
+	position: relative;
+}
+
+.iconslist li img {
+	width: 42px;
+	/* height:42px; */
+}
+
+.customize-popup {
+	width: 360px;
+	height: 340px;
+	border: 2px solid #f7c02a;
+	position: absolute;
+	padding: 24px 25px;
+	left: 160px;
+	top: 100px;
+	/* box-shadow: 1px 1px 5px #ccc; */
+	border-radius: 28px;
+}
+
+.customizeIcons {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	list-style: none;
+	margin-top: 0px;
+}
+
+.customizeIcons li a img {
+	width: 48px;
+	height: 48px;
+	border-radius: 100%;
+	margin-left: 0px;
+	border: 3px solid transparent;
+}
+
+.customizeIcons li.mactive img {
+	border-color: #f7c02a;
+}
+
+.customizeIcons li:hover img {
+	border-color: #f7c02a;
+}
+
+.customizeIcons li {
+	width: 33%;
+	float: left;
+	padding: 5px 15px;
+	margin-top: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	/* border: 1px solid #ccc; */
+}
+
+.customizeIcons li a {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	align-items: start;
+	color: #000000;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.customizeIcons li a label {
+	padding-top: 10px;
+	/* padding-left: 5px; */
+}
+
+@media only screen and (max-width: 767px) {
+	body {
+		overflow: hidden !important;
+	}
+
+	.webgl {
+		width: 100vw !important;
+		height: 60vh !important;
+	}
+
+	.modellist {
+		position: fixed;
+		left: 0;
+		top: 55vh;
+		width: 280px;
+		z-index: 100000;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-left: 10px;
+		background-color: #ffffff;
+	}
+
+	.modellist li {
+		width: 54px;
+		height: 54px;
+		border-radius: 20px;
+		margin-bottom: 0px;
+	}
+
+	.modellist li img {
+		width: 28px;
+		height: 28px;
+	}
+
+	.iconslist li {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 0px;
+		border-radius: 20px;
+	}
+
+	.iconslist li img {
+		width: 32px;
+
+	}
+
+	#rightsideLayout {
+		width: 100vw !important;
+		height: 32% !important;
+		position: absolute;
+		bottom: 0;
+		z-index: 10000;
+		overflow: hidden;
+
+	}
+
+	.iconslist {
+		flex-direction: row;
+
+		padding-top: 10px;
+		margin-left: 0px;
+		justify-content: space-evenly;
+		width: 150px;
+		margin-bottom: 0px;
+
+	}
+
+	.logo {
+		left: 30px;
+		top: 30px;
+	}
+
+	.customize-popup {
+		width: auto;
+		left: 5px;
+		top: 80px;
+		height: 180px;
+		margin-top: 0px;
+		border: none;
+		padding: 5px;
+		overflow-x: auto;
+	}
+
+	.iconslist li {
+		margin-top: 0px;
+	}
+
+	.customizeIcons {
+		display: flex;
+		flex-direction: row;
+
+	}
+
+	.customize-popup::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+
+.slider {
+    appearance: none;
+    opacity: 1;
+    -webkit-transition: all .2s;
+    background: #ffbe26;
+    border-radius: 2px;
+    outline: none;
+    height: 4px;
+    margin-top: 12px;
+    margin-left: 5px;
+    margin-right: 10px;
+    transition: opacity .2s
+}
+.footertext{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 15px;
+}
+.footertext .labelTxt{
+    flex: auto;
+    font-size: 14px;
+	max-width: 150px;
+    
+}
+.footertext .logo_img{
+	flex: auto;
+    max-width: 80px; 
+}
+.form-label img {
+    width: 24px;
+    margin-right: 10px;
+}
+.logo_img{
+    width:50px;
+    margin:5px
+}
+.range-slider{
+    margin-bottom: 25px;
+    margin-top: 10px;
+    width: 100%;
+    float: left;
+}
+
+.form-label{
+    float: left;
+    width: 100%;;
+}
+
+.slider{
+    width:60%;
+    clear: both;
+    float: left;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    cursor: pointer;
+    box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.12), 0 0.5px 4px 0 rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    margin-top: -10px;
+}
+
+.slider::-moz-range-thumb {
+    cursor: pointer;
+    box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.12), 0 0.5px 4px 0 rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    margin-top: -10px;
+}
+
+
+
+input[type="range"]::-webkit-slider-runnable-track {
+	background: linear-gradient(#95afc0 0 0) scroll no-repeat center /
+		100% calc(4px + 1px);
+}
