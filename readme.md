@@ -8,10 +8,10 @@ Commercial implementation or further development based on varied use cases is po
 Please contact madz@craftpixels.in 
 
 ## Features:
-Parametric Shape Generation: Leverages dynamic shape generator to parametrically create unique and complex table top geometries. No need to design & use 3D models from elsewhere as they are created programmatically in real time. Parametric 3D modelling allows us to create 3D models using parameters, relationships, and constraints. Try playing with the sliders. 
-Randomization: Incorporates randomness & complexity sliders to generate a wide variety of table top designs limited only by your imagination.
-Three.js Implementation: Utilizes the power of Three.js for 3D rendering and scene management.
-More : You can change the worktop’s texture to see what looks good for a particular shape. 
+* **Parametric Shape Generation:** Leverages dynamic shape generator to parametrically create unique and complex table top geometries. No need to design & use 3D models from elsewhere as they are created programmatically in real time. Parametric 3D modelling allows us to create 3D models using parameters, relationships, and constraints. Try playing with the sliders. 
+* **Randomization:** Incorporates randomness & complexity sliders to generate a wide variety of table top designs limited only by your imagination.
+* **Three.js Implementation:** Utilizes the power of Three.js for 3D rendering and scene management.
+* **More :** You can change the worktop’s texture to see what looks good for a particular shape. 
 
 ## Contributing:
 Contributions are welcome! Please feel free to submit a pull request or open an issue. 
